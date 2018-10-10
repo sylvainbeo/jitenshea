@@ -49,6 +49,7 @@ ul.cities li {
 }
 
 ul.cities .block {
+    border-radius: 2px;
     opacity: 0.8;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
@@ -62,11 +63,11 @@ ul.cities .block:hover {
 }
 
 ul.cities .block-lyon {
-    background: url(img/bordeaux.jpg) no-repeat left top 
+    background: url(img/lyon.jpg) no-repeat left top 
 }
 
 ul.cities .block-bordeaux {
-    background: url(img/lyon.jpg) no-repeat left top; 
+    background: url(img/bordeaux.jpg) no-repeat left top; 
 }
 
 ul.cities .block .desc {
