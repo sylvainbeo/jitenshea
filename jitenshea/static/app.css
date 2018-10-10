@@ -26,9 +26,15 @@ body {
 .body-bg-3 {
     background: url(img/bg-front-3.jpg) no-repeat center center fixed; 
 }
-.body-bg-4 {
-    background: url(img/bg-front-4.jpg) no-repeat center center fixed; 
+
+.body-index h2 {
+    font-size: 40px;
 }
+
+.body-index h3 {
+    font-size: 30px;
+}
+
 
 ul.cities {
     margin: 0 auto;
