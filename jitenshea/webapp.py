@@ -5,6 +5,7 @@
 
 import daiquiri
 import logging
+import random
 
 from flask import Flask, render_template, abort
 
@@ -26,7 +27,8 @@ def check_city(city):
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+    body_class = "body-index body-bg-{}".format(random.randint(1,4))
+    return render_template("index.html", body_class=body_class)
 
 @app.route('/doc/')
 def swagger_ui():
