@@ -27,8 +27,9 @@ def check_city(city):
 
 @app.route('/')
 def index():
+    cities = ['bordeaux', 'lyon']
     body_class = "body-index body-bg-{}".format(random.randint(1,4))
-    return render_template("index.html", body_class=body_class)
+    return render_template("index.html", body_class=body_class, cities=cities)
 
 @app.route('/doc/')
 def swagger_ui():

@@ -29,3 +29,46 @@ body {
 .body-bg-4 {
     background: url(img/bg-front-4.jpg) no-repeat center center fixed; 
 }
+
+ul.cities {
+    margin: 0 auto;
+    width: 50%;
+}
+
+ul.cities li {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #aaa;
+    display: inline-block;
+}
+
+ul.cities .block {
+    opacity: 0.8;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+ul.cities .block:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+ul.cities .block-lyon {
+    background: url(img/bordeaux.jpg) no-repeat left top 
+}
+
+ul.cities .block-bordeaux {
+    background: url(img/lyon.jpg) no-repeat left top; 
+}
+
+ul.cities .block .desc {
+    color: #ffffff;
+    background: rgba(100, 100, 100, 0.5);
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+    bottom: 0;
+    position: absolute;
+}

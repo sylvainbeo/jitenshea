@@ -13,12 +13,13 @@
 
 <h3>Summary</h3>
 
-<p>Available for the following cities
-  <ul>
-    <li><a href="{{ url_for('city_view', city='bordeaux') }}">Bordeaux</a> (France)</li>
-    <li><a href="{{ url_for('city_view', city='lyon') }}">Lyon</a> (France)</li>
+<p>Available for the following cities</p>
+  <ul class="cities">
+    {% for city in cities %}
+        <a href="{{ url_for('city_view', city=city) }}"><li class="block block-{{city}}"><div class="desc">{{city|title}} (France)</div></li></a>
+    {% endfor %}
   </ul>
-</p>
+
 
 <h3>Access</h3>
 
